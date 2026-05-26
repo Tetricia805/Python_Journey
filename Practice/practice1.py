@@ -1,6 +1,9 @@
 # guess game
 
-secret_number = 7
+import random
+
+# Generate a random number between 1 and 10
+secret_number = random.randint(1, 10)
 guess_count = 0
 guess_limit = 3
 
@@ -12,9 +15,16 @@ while guess_count < guess_limit:
         print("you have passed")
         break
 
+    elif guess_count < guess_limit:
+        # give hints if they have remaining guesses
+        if guess_number > secret_number:
+            print("Too high! Try again.")
+        else:
+            print("Too low! Try again.")
+
     else:
         print("try again")
 
     guess_count += 1
 else:
-    print("Sorry You have failed, Out of guesses")
+    print(f"Sorry You have failed, Out of guesses. The correct number was {secret_number}")
