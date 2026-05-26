@@ -12,7 +12,7 @@ while guess_count < guess_limit:
     guess_number = int(input("Enter the guess number of your choice:"))
 
     if guess_number == secret_number:
-        print("you have passed")
+        print("Congrats 🎉👏 you have passed")
         break
 
     elif guess_count < guess_limit:
@@ -23,7 +23,7 @@ while guess_count < guess_limit:
             print("Too low! Try again.")
 
     else:
-        print("try again")
+        print("Try again")
 
     guess_count += 1
 else:
