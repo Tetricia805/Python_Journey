@@ -28,3 +28,6 @@ while guess_count < guess_limit:
     guess_count += 1
 else:
     print(f"Sorry You have failed, Out of guesses. The correct number was {secret_number}")
+
+
+# Classes: They are used to define new types
